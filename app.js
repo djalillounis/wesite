@@ -4,12 +4,15 @@ const app = express()
 var path = require('path')
 
 
+app.use(express.static('public'))
+
+
 
 const port = 5555
 
 app.get('/', function(req, res) {
 
-        res.sendFile('index.html', {root:path.join(__dirname,'./public')});
+        res.sendFile('index.html', {root:path.join(__dirname,'public')});
 
 
 
