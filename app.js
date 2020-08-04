@@ -7,9 +7,9 @@ var path = require('path')
 
 const port = 5555
 
-app.get('/', (req, res) {
+app.get('/', function(req, res) {
 
-        res.sendFile('index.html', {root:path.join(__dirname,'./public')})
+        res.sendFile('index.html', {root:path.join(__dirname,'./public')});
 
 
 
