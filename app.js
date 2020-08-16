@@ -12,7 +12,7 @@ const port = 5555
 
 app.get('/', function(req, res) {
 
-        #lalal
+        
         res.sendFile('index.html', {root:path.join(__dirname,'public')});
 
 
